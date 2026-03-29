@@ -2,8 +2,6 @@
 
 Site institucional para clínica de estética e saúde. Projeto de portfólio com dados fictícios.
 
-![Hero](screenshots/hero.png)
-
 ## 🔗 Demo
 
 **[mathias-ctrl.github.io/clinica-exemplo](https://mathias-ctrl.github.io/clinica-exemplo)**
@@ -62,12 +60,6 @@ clinica-exemplo/
 └── screenshots/
     └── (prints do projeto)
 ```
-
----
-
-## 🚀 Como rodar
-
-Abra o `index.html` direto no navegador — sem build, sem instalação.
 
 ---
 
