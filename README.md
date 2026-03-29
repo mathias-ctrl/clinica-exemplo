@@ -1,3 +1,4 @@
+
 # Clínica Exemplo — Site Institucional
 
 Site institucional para clínica de estética e saúde. Projeto de portfólio com dados fictícios.
@@ -39,6 +40,7 @@ Abra o `index.html` direto no navegador — sem build, sem instalação.
 ## GitHub Pages
 
 Disponível em: `https://mathias-ctrl.github.io/clinica-exemplo`
+[ACESSAR PAGE!](https://mathias-ctrl.github.io/clinica-exemplo)
 
 ---
 
