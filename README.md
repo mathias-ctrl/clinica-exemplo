@@ -2,9 +2,7 @@
 
 Site institucional para clínica de estética e saúde. Projeto de portfólio com dados fictícios.
 
-## 🔗 Demo
-
-**[mathias-ctrl.github.io/clinica-exemplo](https://mathias-ctrl.github.io/clinica-exemplo)**
+## 🔗 Demo   **[mathias-ctrl.github.io/clinica-exemplo](https://mathias-ctrl.github.io/clinica-exemplo)**
 
 ---
 
