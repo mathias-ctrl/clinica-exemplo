@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.80">
+    <title>Clínica Exemplo</title>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body class="bg-gradient-to-br from-cyan-50 to-teal-50 font-sans">
+
+    
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+        
+        <div class="absolute inset-0 z-0">
+            <img src="img/bg-interior.jpg"
+                 alt="Interior da Clínica"
+                 class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0"></div>
+        </div>
+
+        
+        <div class="relative z-10 container mx-auto px-6 text-center text-white">
+
+            
+            <div class="mb-8 animate-fade-in">
+                <div class="bg-white/10 backdrop-blur-sm rounded-full p-6 inline-block mb-6">
+                    <img src="img/logo.png" class="w-20 h-20 mx-auto" alt="Logo Clínica Exemplo">
+                </div>
+            </div>
+
+            
+            <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight animate-slide-up">
+                Clínica <span class="text-cyan-300">Exemplo</span>
+            </h1>
+
+            
+            <p class="text-xl md:text-3xl font-light mb-8 animate-slide-up-delay">
+                Estética &amp; Saúde
+            </p>
+
+            
+            <div class="flex items-center justify-center mb-8 animate-fade-in-delay">
+                <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-cyan-300"></i>
+                <span class="text-lg">Sua Cidade - UF</span>
+            </div>
+
+            
+            <p class="text-lg md:text-xl opacity-95 max-w-4xl mx-auto mb-12 leading-relaxed animate-fade-in-delay-2">
+                Oferecemos tratamentos estéticos e terapêuticos com tecnologia de ponta e atendimento humanizado.
+                Cuidamos de você com excelência, segurança e resultados visíveis.
+            </p>
+
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up-final">
+                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
+                   target="_blank"
+                   class="bg-cyan-600 hover:bg-cyan-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 inline-flex items-center shadow-2xl hover:shadow-cyan-500/25 hover:scale-105">
+                    <i data-lucide="calendar" class="w-6 h-6 mr-3"></i>
+                    Agende sua Avaliação
+                </a>
+                <a href="#servicos"
+                   class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white/30 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 inline-flex items-center hover:scale-105">
+                    <i data-lucide="sparkles" class="w-6 h-6 mr-3"></i>
+                    Conheça Nossos Serviços
+                </a>
+            </div>
+
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 animate-fade-in-stats">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-cyan-300 mb-2"
+                         id="patientCounter"
+                         data-counter="500"
+                         data-prefix="+">0</div>
+                    <div class="text-sm md:text-base opacity-90">Atendimentos</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-cyan-300 mb-2"
+                         id="yearsCounter"
+                         data-counter="6"
+                         data-prefix="+">0</div>
+                    <div class="text-sm md:text-base opacity-90">Anos de Experiência</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-cyan-300 mb-2"
+                         data-counter="100"
+                         data-suffix="%">0</div>
+                    <div class="text-sm md:text-base opacity-90">Satisfação</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-cyan-300 mb-2"
+                         data-counter="10"
+                         data-prefix="+">0</div>
+                    <div class="text-sm md:text-base opacity-90">Tratamentos</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i data-lucide="chevron-down" class="w-8 h-8"></i>
+        </div>
+    </header>
+
+    
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center py-4 space-x-2 md:space-x-6">
+                <a href="#sobre"       class="px-4 py-2 text-gray-700 hover:text-cyan-700 transition-colors font-medium">Sobre</a>
+                <a href="#servicos"    class="px-4 py-2 text-gray-700 hover:text-cyan-700 transition-colors font-medium">Serviços</a>
+                <a href="#produtos"    class="px-4 py-2 text-gray-700 hover:text-cyan-700 transition-colors font-medium">Produtos</a>
+                <a href="#diferenciais" class="px-4 py-2 text-gray-700 hover:text-cyan-700 transition-colors font-medium">Diferenciais</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main class="container mx-auto px-6 py-12">
+
+        
+        <section id="sobre" class="mb-20">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+
+                    
+                    <div class="md:w-1/2 relative">
+                        <div class="h-96 md:h-full bg-gradient-to-br from-cyan-50 to-teal-100 flex items-center justify-center relative overflow-hidden">
+                            <img src="img/profissional.jpg"
+                                 alt="Dra. Ana Ferreira"
+                                 class="profile-image w-80 h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-white/60"></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="blur-bg rounded-xl p-6">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Conheça Dra. Ana Ferreira</h2>
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                Especialista em estética avançada e medicina integrativa, com mais de 8 anos dedicados a tratamentos que combinam ciência e bem-estar para resultados reais e duradouros.
+                            </p>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Formada em <strong>Enfermagem</strong> e especialista em <strong>Estética Avançada</strong>,
+                                combina conhecimento científico com tecnologia de ponta para oferecer os melhores resultados
+                                aos seus pacientes.
+                            </p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">Enfermagem</span>
+                                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">Estética Avançada</span>
+                                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">Ozonioterapia</span>
+                                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">Vitality Face</span>
+                                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">Lumina Derma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="servicos" class="mb-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Nossos Serviços</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Descubra nossos tratamentos especializados que combinam tecnologia de ponta com cuidado
+                    personalizado para realçar sua beleza natural
+                </p>
+            </div>
+
+            <div class="featured-service mb-12 rounded-2xl">
+                <div class="featured-content">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Vitality Face</h3>
+                    <p class="text-lg text-gray-600 mb-6">Método inovador que trata flacidez, rugas, papada e falta de contorno facial de forma holística, combinando técnicas avançadas para resultados eficazes e duradouros.</p>
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">Mais Procurado</span>
+                    </div>
+                    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Vitality%20Face"
+                       target="_blank"
+                       class="bg-gradient-to-r from-cyan-600 to-teal-700 text-white px-8 py-3 rounded-full hover:from-cyan-700 hover:to-teal-800 transition-all inline-flex items-center font-semibold">
+                        <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+                        Agendar Consulta
+                    </a>
+                </div>
+                <div class="featured-image">
+                    <img src="img/vitality-face.png" alt="Vitality Face" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card rounded-xl shadow-lg card-hover">
+                    <div class="service-image-container">
+                        <img src="img/botox.jpg" alt="Toxina Botulínica" class="service-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Toxina Botulínica</h3>
+                        <p class="service-description">Suavização de rugas dinâmicas e linhas de expressão com técnica de aplicação milimétrica. Resultado natural, sem aspecto artificial, com efeito a partir do 4º dia.</p>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-xl shadow-lg card-hover">
+                    <div class="service-image-container">
+                        <img src="img/ozonioterapia.jpg" alt="Ozonioterapia" class="service-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ozonioterapia</h3>
+                        <p class="service-description">Terapia para saúde geral, ideal para pré e pós-operatório, fortalecendo o sistema imunológico e acelerando a recuperação.</p>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-xl shadow-lg card-hover">
+                    <div class="service-image-container">
+                        <img src="img/depilacao-laser.jpg" alt="Depilação a Laser" class="service-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Depilação a Laser</h3>
+                        <p class="service-description">Remoção definitiva de pelos em todas as áreas do corpo, inclusive zona íntima, com máxima segurança e conforto.</p>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-xl shadow-lg card-hover">
+                    <div class="service-image-container">
+                        <img src="img/ultrassom.jpg" alt="Ultrassom Microfocado" class="service-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ultrassom Microfocado</h3>
+                        <p class="service-description">Lifting não invasivo com tecnologia de ultrassom para firmeza e rejuvenescimento da pele sem cirurgia.</p>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-xl shadow-lg card-hover">
+                    <div class="service-image-container">
+                        <img src="img/ultraformer.jpg" alt="Ultraformer III" class="service-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ultraformer III</h3>
+                        <p class="service-description">Tecnologia avançada para lifting facial e corporal sem cirurgia, com resultados visíveis desde a primeira sessão.</p>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-xl shadow-lg card-hover">
+                    <div class="service-image-container">
+                        <img src="img/limpeza-pele.jpg" alt="Limpeza de Pele" class="service-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Limpeza de Pele</h3>
+                        <p class="service-description">Limpeza profunda profissional para purificar e revitalizar sua pele, removendo impurezas e renovando a textura.</p>
+                    </div>
+                </div>
+
+                <div class="service-card rounded-xl shadow-lg card-hover">
+                    <div class="service-image-container">
+                        <img src="img/terapias-antidor.jpg" alt="Terapias Anti-dor" class="service-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Terapias Anti-dor</h3>
+                        <p class="service-description">Tratamentos especializados para alívio eficaz de dores e desconfortos, melhorando sua qualidade de vida.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="bg-gradient-to-r from-cyan-50 to-teal-50 rounded-2xl p-8 border border-cyan-200">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Não encontrou o que procura?</h3>
+                    <p class="text-lg text-gray-600 mb-6">Entre em contato conosco e descubra outros tratamentos disponíveis</p>
+                    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20sobre%20outros%20tratamentos%20dispon%C3%ADveis"
+                       target="_blank"
+                       class="bg-gradient-to-r from-cyan-600 to-teal-700 text-white px-8 py-3 rounded-full hover:from-cyan-700 hover:to-teal-800 transition-all inline-flex items-center font-semibold">
+                        <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+                        Falar com Especialista
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="produtos" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Produtos Recomendados</h2>
+                <p class="text-lg text-gray-600">Produtos selecionados para potencializar seus resultados</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover-scale">
+                    <div class="h-48 rounded-lg mb-4 overflow-hidden">
+                        <img src="img/produto.png" alt="NutriSkin Pro" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">NutriSkin Pro</h3>
+                    <p class="text-gray-600 mb-4">
+                        Suplemento com colágeno hidrolisado, vitamina C e ácido hialurônico. Atua de dentro para fora, firmando a pele, reduzindo flacidez e promovendo luminosidade real.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-cyan-700"></span>
+                        <a href="#"
+                           target="_blank"
+                           class="bg-cyan-600 text-white px-6 py-2 rounded-full hover:bg-cyan-700 transition-colors">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="diferenciais" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nossos Diferenciais</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-cyan-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="award" class="icon w-10 h-10 text-cyan-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Excelência</h3>
+                    <p class="text-gray-600">Profissionais qualificados e em constante atualização.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-cyan-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="shield-check" class="icon w-10 h-10 text-cyan-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Segurança</h3>
+                    <p class="text-gray-600">Protocolos rigorosos de segurança e higiene.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-cyan-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="cpu" class="icon w-10 h-10 text-cyan-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Tecnologia</h3>
+                    <p class="text-gray-600">Equipamentos de última geração para melhores resultados.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-cyan-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="heart" class="icon w-10 h-10 text-cyan-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Humanização</h3>
+                    <p class="text-gray-600">Atendimento personalizado e acolhedor.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <footer class="relative text-center py-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <p class="text-gray-600 mb-2 font-medium">Clínica Exemplo - Estética &amp; Saúde</p>
+                <p class="text-sm text-gray-500">Transformando vidas através da beleza e bem-estar em Sua Cidade - UF</p>
+            </div>
+            <div class="absolute top-2 right-4 text-sm text-gray-400">
+                Desenvolvido por
+                <a href="https://github.com/mathias-ctrl"
+                   target="_blank"
+                   class="font-semibold text-gray-500 hover:text-green-600 transition">
+                    Mathias Arruda
+                </a>
+                | Dev
+            </div>
+        </footer>
+
+    </main>
+
+    
+    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
+       class="whatsapp-float"
+       target="_blank"
+       title="Agendar consulta pelo WhatsApp">
+        <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 32 32" fill="white">
+                <path d="M16 2C8.268 2 2 8.268 2 16c0 2.434.65 4.714 1.784 6.684L2 30l7.53-1.745A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.604l-.42-.25-4.47 1.036.998-4.37-.274-.44A11.46 11.46 0 0 1 4.5 16C4.5 9.649 9.649 4.5 16 4.5S27.5 9.649 27.5 16 22.351 27.5 16 27.5zm6.29-8.47c-.344-.172-2.04-1.006-2.356-1.12-.316-.113-.547-.172-.777.172-.23.344-.892 1.12-1.093 1.35-.2.23-.4.258-.745.086-.344-.172-1.452-.535-2.767-1.707-1.022-.913-1.713-2.04-1.913-2.384-.2-.344-.021-.53.15-.7.155-.154.344-.4.516-.6.172-.2.23-.344.344-.573.115-.23.058-.43-.029-.6-.086-.172-.777-1.873-1.065-2.563-.28-.672-.565-.58-.777-.59l-.662-.011a1.27 1.27 0 0 0-.92.43c-.316.344-1.207 1.178-1.207 2.873s1.235 3.333 1.407 3.563c.172.23 2.43 3.71 5.888 5.204.823.355 1.465.567 1.965.726.826.263 1.578.226 2.172.137.662-.1 2.04-.834 2.327-1.64.287-.804.287-1.493.2-1.637-.086-.143-.316-.23-.66-.402z"/>
+            </svg>
+            <span class="whatsapp-text ml-2">Agendar Consulta</span>
+        </div>
+    </a>
+
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>
